@@ -42,7 +42,11 @@ public class Program {
         System.out.println("novo id inserido = " + newSeller.getId());
         
         
-        
+        System.out.println("\n=== teste number 5 seller update ===");
+        seller = sellerDao.findById(1);
+        seller.setName("gabriel jesus");
+        sellerDao.update(seller);
+        System.out.println("update completo");
         
         
         
